@@ -49,7 +49,7 @@ public class Generos extends javax.swing.JFrame {
                 {null, null}
             },
             new String [] {
-                "Id", "Genero"
+                "Id", "Género"
             }
         ));
         jScrollPane1.setViewportView(jTable1);

@@ -50,7 +50,7 @@ public class TelefonoClientes extends javax.swing.JFrame {
                 {null, null, null}
             },
             new String [] {
-                "Id", "Id del Cliente", "Telefono"
+                "Id", "Id del Cliente", " Teléfono"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
