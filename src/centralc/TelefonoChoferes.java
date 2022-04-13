@@ -52,7 +52,7 @@ public class TelefonoChoferes extends javax.swing.JFrame {
                 {null, null, null}
             },
             new String [] {
-                "Id", "Chofer (Id)", " Teléfono"
+                "Id", "Chofer", " Teléfono"
             }
         ));
         jScrollPane1.setViewportView(jTable1);
