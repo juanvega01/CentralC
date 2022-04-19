@@ -1,5 +1,5 @@
 package centralc;
-// Yoooo
+
 
 public class Autobuses extends javax.swing.JFrame {
 
@@ -7,7 +7,7 @@ public class Autobuses extends javax.swing.JFrame {
     public Autobuses() {
         initComponents();
         this.setResizable(false);
-        this.setTitle("AgendITA: Registro: Autobuses");   
+        this.setTitle("GestionC. Autobuses");   
         this.setLocationRelativeTo(null);
     }
 
@@ -29,7 +29,7 @@ public class Autobuses extends javax.swing.JFrame {
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
         jPanel1.setBackground(new java.awt.Color(146, 219, 219));
-        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true), "Registro de autobuses", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
+        jPanel1.setBorder(javax.swing.BorderFactory.createTitledBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true), "Autobuses", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Segoe UI", 1, 14))); // NOI18N
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setText("Buscar:");

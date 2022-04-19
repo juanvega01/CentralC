@@ -8,7 +8,7 @@ public class EditarUsuario extends javax.swing.JFrame {
     public EditarUsuario() {
         initComponents();
         this.setResizable(false);
-        this.setTitle("GestionC: Registro: Usuarios");   
+        this.setTitle("GestionC: Editar Usuarios.");   
         this.setLocationRelativeTo(null);             
     }
 
@@ -45,13 +45,15 @@ public class EditarUsuario extends javax.swing.JFrame {
         jLabel3.setText("Nota: El nombre y la contraseña puede tener un maximo de 11 caracteres.");
         jLabel3.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 4, true));
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/aceptar.png"))); // NOI18N
+        jButton1.setBackground(new java.awt.Color(146, 219, 219));
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancelar.png"))); // NOI18N
         jButton1.setToolTipText("Aceptar.");
-        jButton1.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jButton1.setBorder(null);
 
-        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/cancelar.png"))); // NOI18N
+        jButton2.setBackground(new java.awt.Color(146, 219, 219));
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/aceptar.png"))); // NOI18N
         jButton2.setToolTipText("Cancelar.");
-        jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 1, true));
+        jButton2.setBorder(null);
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
