@@ -23,7 +23,7 @@
   <Layout>
     <DimensionLayout dim="0">
       <Group type="103" groupAlignment="0" attributes="0">
-          <Component id="jPanel1" alignment="0" pref="592" max="32767" attributes="0"/>
+          <Component id="jPanel1" alignment="0" pref="738" max="32767" attributes="0"/>
       </Group>
     </DimensionLayout>
     <DimensionLayout dim="1">
@@ -58,27 +58,31 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButtonUsuarios" max="32767" attributes="0"/>
-                      <Component id="jButtonSalidas" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="jButtonSalidas" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="jButtonChoferes1" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButtonClientes" min="-2" max="-2" attributes="0"/>
-                      <Component id="jButtonRutas" min="-2" pref="128" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jButtonRutas" min="-2" pref="128" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                          <Component id="jButtonGraficas" min="-2" pref="128" max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <Component id="jButtonUsuarios" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace type="separate" max="-2" attributes="0"/>
+                          <Component id="jButtonClientes" min="-2" max="-2" attributes="0"/>
+                      </Group>
                   </Group>
-                  <EmptySpace min="-2" pref="18" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="0" attributes="0">
                           <Component id="jButtonAutobuses" min="-2" pref="128" max="-2" attributes="0"/>
                           <EmptySpace type="separate" max="-2" attributes="0"/>
                           <Component id="jButtonChoferes" min="-2" pref="128" max="-2" attributes="0"/>
                       </Group>
-                      <Group type="102" alignment="0" attributes="0">
-                          <Component id="jButtonGraficas" min="-2" pref="128" max="-2" attributes="0"/>
-                          <EmptySpace type="separate" max="-2" attributes="0"/>
-                          <Component id="jButtonMasRegistros" min="-2" pref="128" max="-2" attributes="0"/>
-                      </Group>
+                      <Component id="jButtonMasRegistros" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -86,20 +90,25 @@
         </DimensionLayout>
         <DimensionLayout dim="1">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Group type="102" attributes="0">
+              <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="jButtonClientes" max="32767" attributes="0"/>
-                      <Component id="jButtonUsuarios" max="32767" attributes="0"/>
-                      <Component id="jButtonAutobuses" alignment="0" max="32767" attributes="0"/>
-                      <Component id="jButtonChoferes" max="32767" attributes="0"/>
+                  <Group type="103" groupAlignment="1" attributes="0">
+                      <Group type="103" alignment="1" groupAlignment="0" attributes="0">
+                          <Group type="103" alignment="0" groupAlignment="0" max="-2" attributes="0">
+                              <Component id="jButtonClientes" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonUsuarios" alignment="0" max="32767" attributes="0"/>
+                              <Component id="jButtonAutobuses" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <Component id="jButtonChoferes1" alignment="1" min="-2" pref="128" max="-2" attributes="0"/>
+                      </Group>
+                      <Component id="jButtonChoferes" alignment="1" min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace type="separate" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jButtonSalidas" min="-2" pref="128" max="-2" attributes="0"/>
-                      <Component id="jButtonGraficas" min="-2" pref="128" max="-2" attributes="0"/>
-                      <Component id="jButtonMasRegistros" min="-2" pref="128" max="-2" attributes="0"/>
-                      <Component id="jButtonRutas" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="jButtonSalidas" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="jButtonGraficas" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="jButtonMasRegistros" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
+                      <Component id="jButtonRutas" alignment="0" min="-2" pref="128" max="-2" attributes="0"/>
                   </Group>
                   <EmptySpace max="32767" attributes="0"/>
               </Group>
@@ -250,6 +259,22 @@
               </Border>
             </Property>
           </Properties>
+        </Component>
+        <Component class="javax.swing.JButton" name="jButtonChoferes1">
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/imagenes/Tickets.png"/>
+            </Property>
+            <Property name="toolTipText" type="java.lang.String" value="Boletos."/>
+            <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+              <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
+                <LineBorder roundedCorners="true" thickness="3"/>
+              </Border>
+            </Property>
+          </Properties>
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="jButtonChoferes1ActionPerformed"/>
+          </Events>
         </Component>
       </SubComponents>
     </Container>
