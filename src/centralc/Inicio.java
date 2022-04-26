@@ -1,5 +1,6 @@
 package centralc;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
 
@@ -48,6 +49,11 @@ public class Inicio extends javax.swing.JFrame {
         jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/Tickets.png"))); // NOI18N
         jButton2.setToolTipText("Compra de boletos.");
         jButton2.setBorder(new javax.swing.border.LineBorder(new java.awt.Color(0, 0, 0), 3, true));
+        jButton2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jButton2MouseEntered(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -101,6 +107,10 @@ public class Inicio extends javax.swing.JFrame {
         a.setVisible(true);
         this.setVisible(false);
     }//GEN-LAST:event_jButtonInicioSesionActionPerformed
+
+    private void jButton2MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jButton2MouseEntered
+        jButton2.setBackground(Color.GRAY);
+    }//GEN-LAST:event_jButton2MouseEntered
 
     
     public static void main(String args[]) {

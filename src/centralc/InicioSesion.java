@@ -1,20 +1,23 @@
 package centralc;
 
+import java.awt.Color;
 import java.awt.Image;
 import java.awt.Toolkit;
+import javax.swing.JOptionPane;
 
 public class InicioSesion extends javax.swing.JFrame {
 
-    
+    String usuario = "juan";
+    String contraseña = "juan12345";
+
     public InicioSesion() {
-        
+
         initComponents();
         this.setLocationRelativeTo(null);
         this.setTitle("CentralC.");
-        this.setResizable(false); 
+        this.setResizable(false);
     }
 
-   
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
@@ -41,6 +44,18 @@ public class InicioSesion extends javax.swing.JFrame {
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel2.setText("Contraseña:");
 
+        jTextFieldUsuario.setText("Ingresa tu Usuario");
+        jTextFieldUsuario.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jTextFieldUsuarioMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jTextFieldUsuarioMouseExited(evt);
+            }
+            public void mousePressed(java.awt.event.MouseEvent evt) {
+                jTextFieldUsuarioMousePressed(evt);
+            }
+        });
         jTextFieldUsuario.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextFieldUsuarioActionPerformed(evt);
@@ -62,7 +77,15 @@ public class InicioSesion extends javax.swing.JFrame {
         jLabel3.setToolTipText("");
         jLabel3.setMinimumSize(new java.awt.Dimension(32, 3));
 
-        jPasswordContraseña.setText("jPasswordField1");
+        jPasswordContraseña.setText("********");
+        jPasswordContraseña.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jPasswordContraseñaMouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jPasswordContraseñaMouseExited(evt);
+            }
+        });
         jPasswordContraseña.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jPasswordContraseñaActionPerformed(evt);
@@ -91,7 +114,7 @@ public class InicioSesion extends javax.swing.JFrame {
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addGap(227, 227, 227)
                         .addComponent(jButtonIniciarSesion)))
-                .addContainerGap(96, Short.MAX_VALUE))
+                .addContainerGap(97, Short.MAX_VALUE))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -114,49 +137,70 @@ public class InicioSesion extends javax.swing.JFrame {
                         .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(46, 46, 46)
                 .addComponent(jButtonIniciarSesion)
-                .addContainerGap(66, Short.MAX_VALUE))
+                .addContainerGap(83, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 585, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 586, Short.MAX_VALUE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 350, Short.MAX_VALUE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, 365, Short.MAX_VALUE)
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
-    
-    public Image getIconImage(){
-        
+
+    public Image getIconImage() {
+
         Image retValue = Toolkit.getDefaultToolkit().getImage(ClassLoader.getSystemResource("imagenes\\logoPestaña.png"));
         return retValue;
-        }
-    
-    
+    }
+
+   
     private void jButtonIniciarSesionActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButtonIniciarSesionActionPerformed
 
         CRUD a = new CRUD();
         a.setVisible(true);
         this.setVisible(false);
-
+       
     }//GEN-LAST:event_jButtonIniciarSesionActionPerformed
-
+   
     private void jTextFieldUsuarioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_jTextFieldUsuarioActionPerformed
 
     private void jPasswordContraseñaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jPasswordContraseñaActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_jPasswordContraseñaActionPerformed
 
-    /**
-     * @param args the command line arguments
-     */
+    private void jTextFieldUsuarioMousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioMousePressed
+     
+     
+    }//GEN-LAST:event_jTextFieldUsuarioMousePressed
+
+    private void jTextFieldUsuarioMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioMouseEntered
+        jTextFieldUsuario.setBackground(Color.LIGHT_GRAY);
+      
+    }//GEN-LAST:event_jTextFieldUsuarioMouseEntered
+
+    private void jTextFieldUsuarioMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jTextFieldUsuarioMouseExited
+        jTextFieldUsuario.setBackground(Color.WHITE);
+        
+    }//GEN-LAST:event_jTextFieldUsuarioMouseExited
+
+    private void jPasswordContraseñaMouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordContraseñaMouseEntered
+        jPasswordContraseña.setBackground(Color.LIGHT_GRAY);
+        
+    }//GEN-LAST:event_jPasswordContraseñaMouseEntered
+
+    private void jPasswordContraseñaMouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPasswordContraseñaMouseExited
+        jPasswordContraseña.setBackground(Color.WHITE);
+    }//GEN-LAST:event_jPasswordContraseñaMouseExited
+
     public static void main(String args[]) {
         /* Set the Nimbus look and feel */
         //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
